@@ -1,0 +1,44 @@
+
+<% provide(:title, 'Home')%>
+<script type="text/javascript" src="carousel.js"></script>
+<div class="carousel slide" id="myCarousel">
+	<ol class="carousel-indicators">
+		<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active">
+			<%=image_tag "1.png",width: '100%',height: '10'%>
+			<div class="carousel-caption">
+				<h4>Заголовок слайда</h4>
+				<p>qweqeqw</p>
+			</div>		
+		</div>
+		<div class="item">
+			<%=image_tag "1.png", width: "100%",height: '40%'%>
+			<div class="carousel-caption">
+				<h4>Заголовок слайда</h4>
+				<p>as12123123123</p>
+			</div>	
+		</div>
+		<div class="item">
+		<%=image_tag "1.png",width: '100%',height: '40%'%>
+			<div class="carousel-caption">
+				<h4>Заголовок слайда</h4>
+				<p>asdasdasdasdasdas</p>
+			</div>	
+		</div>
+	</div>
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+<div class="center hero-unit"style="background-color: white">
+	<h1>Найдите свои вещи <br>с помощью<br> Help Me Find!</h1>
+	<p><p>
+	<h2>csadasdasdasdasdas<br>qweqweqweqweqweqweqw<h2>
+</div>
+<div class="center">
+	<%= link_to "Присоединиться", '#', class: "btn btn-large btn-primary center" ,id: "button"%>
+</div>
+
