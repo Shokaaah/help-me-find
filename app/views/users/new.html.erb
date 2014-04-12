@@ -1,0 +1,25 @@
+<%provide(:title,"Регистрация")%>
+
+<div class="container">
+ <%= render 'shared/error_messages'%>
+ <div class="row">
+  <div class="span6 offset3">
+   <%= form_for( @user ) do |f|%>   
+	 <%= f.label :name,"Введите ваше имя:" %>
+	 <%= f.text_field :name%>
+
+	 <%= f.label :email,"email" %>
+	 <%= f.email_field :email%>
+
+	 <%= f.label :password,"Пароль" %>
+	 <%= f.password_field :password%>
+
+	 <%= f.label :password_confirmation, "Подтвердите пароль" %>
+	 <%= f.password_field :password_confirmation%>
+
+	 <%= f.submit "Создать аккаунт", class: "btn btn-large btn-primary" %>
+   <%end%>
+   </div>
+ </div>
+</div>
+s
